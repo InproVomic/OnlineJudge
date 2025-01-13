@@ -16,6 +16,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <packaging>pom</packaging>
     <modules>
         <module>oj-modules</module>
+        <module>oj-common</module>
+        <module>oj-gateway</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -23,6 +25,13 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <spring-boot.version>3.0.1</spring-boot.version>
         <spring-cloud-alibaba.version>2022.0.0.0-RC2</spring-cloud-alibaba.version>
         <spring-cloud.version>2022.0.0</spring-cloud.version>
+        <oj.common.swagger.version>1.0-SNAPSHOT</oj.common.swagger.version>
+        <springdoc.openapi.version>2.2.0</springdoc.openapi.version>
+        <oj.common.fastjson.version>2.0.43</oj.common.fastjson.version>
+        <io.jsonwebtoken.jjwt.version>0.9.1</io.jsonwebtoken.jjwt.version>
+        <javax.xml.bind.jaxb-api.version>2.4.0-b180830.0359</javax.xml.bind.jaxb-api.version>
+        <cn.hutool.hutool-all.version>5.8.22</cn.hutool.hutool-all.version>
+        <oj-common-security.version>1.0-SNAPSHOT</oj-common-security.version>
     </properties>
     <dependencies>
         <!-- bootstrap 启动器 -->
@@ -30,6 +39,23 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
+        <!--Lombok引入-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cbb</groupId>
+            <artifactId>oj-common-swagger</artifactId>
+            <version>${oj.common.swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>${springdoc.openapi.version}</version>
+        </dependency>
+
+
     </dependencies>
     <dependencyManagement>
         <dependencies>

@@ -20,11 +20,23 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <mybatis.plus.version>3.5.5</mybatis.plus.version>
+        <oj-common-core.version>1.0-SNAPSHOT</oj-common-core.version>
+        <oj-common-redis.version>1.0-SNAPSHOT</oj-common-redis.version>
+        <oj-common-swagger.version>1.0-SNAPSHOT</oj-common-swagger.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 </project>

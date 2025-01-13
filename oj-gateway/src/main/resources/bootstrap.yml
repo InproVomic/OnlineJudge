@@ -1,9 +1,10 @@
+# Spring
 spring:
   application:
-    name: oj-system
-  ##connection-test-query: SELECT 1 如果驱动⽀持 JDBC4.0，建议不设置，这时默认会调⽤ Connection.isValid() 来检查，该⽅式会更⾼效⼀些
-  ##keepalive-time 多久检查⼀次连接的活性 默认不启⽤
+  # 应⽤名称
+    name: oj-gateway
   profiles:
+  # 环境配置
     active: local
   cloud:
     nacos:
